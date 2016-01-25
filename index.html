@@ -61,7 +61,7 @@
                     <i class="fa fa-envelope-o"></i> Contact</a></li>
               </ul>
               <ul class="nav navbar-nav navbar-right">
-                    <li><a>
+                    <li><a id="LoginModal">
                     <span class="glyphicon glyphicon-log-in"></span> Login</a>
                     </li>
                 </ul>
@@ -373,5 +373,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $("#LoginModal").click(function(){
+            $("#loginModal").modal();
+        });
+      });
+    </script>
 </body>
 </html>
