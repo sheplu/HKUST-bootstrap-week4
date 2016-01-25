@@ -173,7 +173,8 @@
                 </div>
                 <div class="col-xs-12 col-sm-2">
                     <p style="padding:40px;"></p>
-                    <a type="button" class="btn btn-warning btn-block" title="Or Call us at +852 12345678">
+                    <a type="button" class="btn btn-warning btn-block" title="Or Call us at +852 12345678"
+                    id="ReserveModal">
                        Reserve Table</a>
                 </div>
             </div>
@@ -377,6 +378,12 @@
       $(document).ready(function(){
         $("#LoginModal").click(function(){
             $("#loginModal").modal();
+        });
+      });
+
+      $(document).ready(function(){
+        $("#ReserveModal").click(function(){
+            $("#reserveModal").modal();
         });
       });
     </script>
